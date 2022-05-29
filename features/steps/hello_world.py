@@ -27,11 +27,11 @@ def step_impl(context):
     context.name = "Juan"
 
 
-@then("return 'Hello Nicolas'")
+@then("return 'Hello Nicolas!'")
 def step_impl(context):
     assert hola_mundo(context.name) == "Hello Nicolas!"
 
 
-@then("do not return 'Hello Nicolas'")
+@then("do not return 'Hello Nicolas!'")
 def step_impl(context):
     assert hola_mundo(context.name) != "Hello Nicolas!"
